@@ -4,6 +4,7 @@ class Vehicle {
     public String model;
     public int price;
     public int MPG;
+
     public Vehicle(int Year, int price, int MPG, String make, String model) {
         this.Year = Year;
         this.price = price;
@@ -12,10 +13,15 @@ class Vehicle {
         this.make = make;
     }
 
+    public Vehicle() {
+
+    }
+
+
     public String toString() {
         return ( Year + " " +  make+ " "+ model
                 +"\n"
-                +"$"+ price
+                +"$"+ price+".00"
                 +"\n"
                 +"MPG:"+ MPG );
     }
